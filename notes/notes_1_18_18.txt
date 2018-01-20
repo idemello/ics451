@@ -1,2 +1,58 @@
-OSI Layers
+OSI Model
 
+    created in the late 80s
+
+7 - Application - HTTP | DNS | SMTP
+6 - Presentation formatting of information
+5 - Session keeps track of sessions between client host or P2P
+4 - Transport - keeps track if information reaches the right destination - TCP | UDP 
+3 - Network - Responsible for the determining the path/routing - IP
+2 - Data Link - Determines the access to the medium
+1 - Physical - Responsible for actual signaling
+0 - Medium
+
+How is this useful today?
+    Useful skill, when a concept is introduced
+    try to put it into a layer of the OSI layer
+
+Why do we use this
+    Analogy:
+    communication between President 1 <--> President 2
+    Understanding how these two communicate
+    Understanding the security (is the information received/sent correct?)
+    How to deal with large amounts of data(orginization)
+    Typically these sytems are symmetrical
+    
+Signal vs Data
+    Data - Bits - discrete
+    Signal - Sound waves and the like - Continous
+
+Error checking happens at multiple layers
+    Layers 2 , 4 , and 7 (happens the most often at these layers)
+
+
+    All protocols will have a body, this is the information sent
+    some will have headers as well
+    Analogy Header = envelope body = letter
+
+HTTP
+    GET - when information is wanted, only a header sent
+    POST -when information is sent, header and body sent
+    HEAD -
+    OPTIONS - 
+
+URL - Universal Resource Locator
+    consists of http://www.hawaii.edu/ics/451/hw1
+    4 pieces of information when a url is put into the bar
+    path - the resource at that location ex:  /ics/451/hw1
+    host - www.hawaii.edu
+
+A browser is an HTTP client
+
+Ports
+    A server has many "doors" or ports where each number refers to different things
+    Ex. HTTP is port 80
+    If the wrong type of information is sent ex. DNS on port 80. will probably send back an error
+    
+
+The user agent is a description of the http client, browser, OS, etc.
